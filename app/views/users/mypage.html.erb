@@ -1,0 +1,33 @@
+<div class="main-wrapper">
+    <div class="main">
+        <div class="mypage">
+            <img src="<%= "/user_images/#{@user.image_name}" %>" class="mypage-icon">
+            <h2 class="nickname"><%= @user.name%></h2>
+            <p class="edit">
+                <% if @user.id == @current_user.id%>
+                    <%= link_to("プロフィールを編集", "/users/#{@user.id}/edit")%> 
+                <% else %>
+                    <br>
+                <% end %>
+            </p>
+            <ul class="mypage-tab">
+                <a href=""><li class="now-selected">投稿</li></a>
+                <a href=""><li>いいね</li></a>
+                <a href=""><li>フォロー</li></a>
+                <a href=""><li>フォロワー</li></a>
+            </ul>     
+            <hr>  
+            <div class="mypage-contents">
+                <% @my_posts.each do |post|%>
+                    <div class="content-box">
+                        <img src="<%= "/post_images/#{post.id}/1.jpg" %>" class="mypost">
+                        <ul>
+                            <li><%= post.title %></li>
+                            <li><%= User.find_by(id: post.user_id).name%></li>
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+        </div> 
+    </div>
+</div>

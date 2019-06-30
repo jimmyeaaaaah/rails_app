@@ -1,0 +1,29 @@
+<div class="main-wrapper">
+    <div class="main">
+        <h2 class="title">作品投稿</h2>
+        <hr class="title-border">
+        <div class="form-body submit-image">
+            <% @post.errors.full_messages.each do |message| %>
+                <div class="form-error">
+                    <%= message %>
+                    <% if @error_message %>
+                        <%= @error_message%>
+                    <% end %>
+                </div>
+            <% end %>
+
+            <%= form_tag("/posts/create", {multipart:true}) do %>
+                <p>画像ファイルのアップロード</p>
+                    <label for="img_arr">
+                        画像ファイルを選択<br>(複数選択可)
+                        <input type="file" id="img_arr" name="img_arr[]" accept="image/*" multiple>
+                    </label>
+                <p>タイトル</p>
+                    <input type="text" name="title" value="<%= @title %>">
+                <p>キャプションを追加</p>
+                    <textarea class="caption" name="caption" cols="30" rows="10" ><%= @caption%></textarea>
+                <input type="submit" value="投稿" class="simple-btn">
+            <% end %>
+        </div>
+    </div>
+</div>

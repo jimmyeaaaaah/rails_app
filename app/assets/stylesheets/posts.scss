@@ -1,0 +1,28 @@
+
+.submit-image input[type="file"]{
+    display: none;
+}
+
+
+.submit-image label {
+    display: block;
+    cursor : pointer;
+    color: #B483D9;
+    background-color:rgb(244, 230, 255);
+    border: solid 2px #B483D9;
+    padding: 5px 0;
+    text-align: center;
+    margin: 20px 0px 80px 0;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+
+.caption {
+    width: 400px;
+    height: 100px;
+    border: solid 2px #B483D9;
+    border-radius: 10px;
+    -webkit-appearance:none;
+    padding: 5px 10px;
+}

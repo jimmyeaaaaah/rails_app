@@ -1,0 +1,189 @@
+@import "./home";
+@import "./users";
+@import "./posts";
+
+/*----共通設定----*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {  
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    background-color:#F0F0F0;
+}
+
+.main-wrapper{
+    margin-left: 150px;
+    width: 1250px;
+    position: relative;
+    background-color: black;
+}
+
+.main-left{
+    position: absolute;
+    width: 19%;
+}
+
+.main{
+    position: absolute;
+    display: inline-block;
+    width: 70%;
+    left: 19%;
+    padding-bottom: 80px;
+    background-color: white;
+}
+
+
+.simple-btn{
+    color: #B483D9;
+    background-color: #EACEFF;
+    border-top:solid 2px rgb(241, 223, 255);
+    border-left:solid 2px rgb(241, 223, 255);
+    border-bottom: solid 2px #B483D9;
+    border-right: solid 2px #B483D9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.rich_btn {
+	display: block;
+	width:100px;
+	height: 25px;
+	text-align: center;
+	text-decoration: none;
+	color: #B483D9;
+    border: 2px solid #B483D9;
+    background-color: white;
+	border-radius: 8px;
+	transition: .4s;
+}
+
+/* -------------------------------------------------------------------*/
+
+header .container {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    margin: 30px 0 0 0;
+    background-color:  #B483D9;
+}
+
+.global-menu-left {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: 150px;
+}
+
+.global-menu-left .logo{
+    width:140px;
+    height:50px;
+    float: left;
+    margin: 15px 10px 10px 0px;
+}
+
+.global-menu-left ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px 0 25px 30px;
+}
+
+.global-menu-left li{
+    color: #EEE2F6;
+    margin-left: 30px; 
+}
+
+.global-menu-right {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    right: 345px;
+}
+
+.global-menu-right ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 30px 0 25px 30px;
+}
+
+.global-menu-right li{
+    color: #EEE2F6;
+    margin: 0 20px 0 30px;
+}
+
+
+/* --header以外-----------------------------------------------------------------*/
+.user-info-box{
+    position: absolute;
+    top: 140px;
+    left: 120px;
+    height: 110px;
+    width: 265px;
+    background-color:#EEE2F6;
+    border-radius: 55px 0 0 55px;
+    border: solid 2px  #B483D9;
+    border-right: none;
+}
+
+.user-info-box .icon{
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    height:95px;
+    width: 95px;
+    border-radius: 50%;
+}
+
+
+.user-info-box h4{
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    width: 56%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-info-box ul{
+    height: 65px;
+    margin: 40px 0 0 125px;
+}
+
+
+.user-info-box li{
+    margin: 0 5px 5px 10px;
+}
+
+.rich_btn:hover{
+	background: #B483D9;
+	color: #fff;
+}
+
+/* -------------------------------------------------------------------*/
+
+
+footer{
+    margin: auto;
+    width:100%;
+    padding: 10px;/*これを書かないとフッターの下に余白ができてしまう*/
+}

@@ -1,0 +1,72 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.home-tab{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+
+.home-tab li{
+    background-color: #EACEFF;
+    color:  #B483D9;
+    padding: 7px 0px 7px 25px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px 0 0 10px;
+    border-top: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-color:  #B483D9;
+    border-width: 1px;
+}
+
+.home-tab .now-selected{
+    background-color: #B483D9; 
+    color: #EEE2F6;
+}
+
+
+.main .title{
+    color: #B483D9;
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+
+.ranking-tab{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.ranking-tab li{
+    background-color: #EACEFF;
+    color:  #B483D9;
+    width: 130px;
+    text-align: center;
+    padding: 8px 0 2px 0;
+    margin: 0 15px 0 0;
+    border-radius: 13px 13px 0 0;
+}
+
+.ranking-tab .now-selected{
+    background-color: #B483D9; 
+    color: #EEE2F6;
+}
+
+.menu-tab-border{
+    width: 95%;
+    height: 1px;
+    margin-left: 2.5%;
+    background-color: #B483D9;
+    border: none;
+}
+
+.contents-wrapper{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}

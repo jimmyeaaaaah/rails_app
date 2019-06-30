@@ -1,0 +1,149 @@
+/*--users#new, users#login------------------------------------*/
+
+.title-border{
+    height: 2px;
+    width: 95%;
+    position: absolute;
+    top: 115px;
+    background-color: #B483D9;
+    border: none;
+    margin: 0 2.5% 0 2.5%;
+}
+
+.form-body{
+    position: relative;
+    top: 20px;
+    width: 50%;
+    margin: auto;
+    /*background-color: #B483D9;*/
+}
+
+button, input, select, textarea {
+    font-size: 16px;
+    color: #B483D9;
+}
+
+.form-body p{
+    margin: 35px 0 3px 0;
+    color:  #B483D9;
+}
+
+input[type='text'], input[type="password"], input[type="date"]{
+    width: 400px;
+    height: 30px;
+    border: solid;
+    border-color: #B483D9;
+    border-width: 2px;
+    border-radius: 10px;
+    -webkit-appearance:none;
+    padding-left: 10px;
+}
+
+
+input[type="radio"]{
+    margin:0px 20px 0 20px;
+    background-color: #B483D9;
+}
+
+
+input[type= "submit"]{
+    display: flex;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 260px;
+    height: 40px;
+    padding-top: 3px;
+    padding-left: 95px;
+}
+
+/*--users#mypage------------------------------------*/
+.mypage-icon{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+.mypage .nickname{
+    display: block;
+    color: #B483D9;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mypage .edit{
+    display: block;
+    color: #B483D9;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.mypage-tab{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.mypage-tab li{
+    background-color: #EACEFF;
+    color:  #B483D9;
+    width: 130px;
+    text-align: center;
+    padding: 8px 0 2px 0;
+    margin: 0 15px 0 0;
+    border-radius: 13px 13px 0 0;
+}
+
+.mypage-tab .now-selected{
+    background-color: #B483D9; 
+    color: #EEE2F6;
+}
+
+.mypage hr{
+    position: absolute;
+    height: 1px;
+    width: 95%;
+    top: 375px;
+    margin: 0 2.5% 0 2.5%;
+    background-color: #B483D9;
+    border: none;
+}
+
+.mypage-contents{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 95%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F0F0F0;
+    border-radius: 10px 10px;
+}
+
+.mypage-contents .content-box{
+    height: 330px;
+    width: 270px;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+}
+
+.mypage-contents img{
+    width: 270px;
+    height: 270px;
+    object-fit: cover; 
+}
+
+.mypage-contents li{
+    text-align: center;
+    color: #B483D9;
+}
+

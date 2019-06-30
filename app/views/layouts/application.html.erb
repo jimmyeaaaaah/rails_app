@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gecko</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <header>
+        <div class="container">
+          <div class="global-menu-left">
+            <div class="header-logo">
+              <a href="/"><img src="/pixiv.png" alt="" class="logo"></a>
+            </div>
+            <ul>
+              <li><a href="/">ホーム</a></li>
+            </ul>
+          </div>
+          <div class="global-menu-right">
+            <ul>
+              <a href="/posts/new"><li class="btn">作品投稿</li></a>
+              <li class="btn"><%= link_to("ログアウト", "/logout", {method: :post}) %></li>
+              <a href="/login"><li class="btn">ログイン</li></a>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <p class="flash-message"><%= flash[:notice]%></p>
+      <div class="user-info-box">
+          <% if @current_user%>
+            <img src="<%= "/user_images/#{@current_user.image_name}"%>" alt="" class="icon">
+            <h4><%= @current_user.name%></h4>
+            <ul>
+              <li class="rich_btn"><%=link_to("マイページ","users/#{@current_user.id}")%></li>
+              <li class="rich_btn"><%=link_to("ログアウト","/logout", {method: :post})%></li>
+            </ul>
+          <% else %>
+            <img src="/user_images/default.png" alt="" class="icon">
+            <h4>ゲストさん</h4>
+            <ul>
+              <li class="rich_btn"><%=link_to("新規登録","/users/new")%></li>
+              <li class="rich_btn"><%=link_to("ログイン","/login")%></li>
+            </ul>
+          <% end %>
+      </div>
+      
+    <%= yield %>
+  </body>
+</html>
